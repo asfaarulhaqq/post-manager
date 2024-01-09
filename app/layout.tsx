@@ -18,8 +18,10 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
       <body className="bg-white">
-        <Header/>
-        {children}
+        <Header />
+        <div className="container mx-auto mt-4 space-y-16 px-4 lg:px-0">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
