@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Login from '../../app/login/page';
 // import { GlobalData } from '../../lib/types';
 
 export default function SiteLogo(): JSX.Element {
@@ -13,6 +14,13 @@ export default function SiteLogo(): JSX.Element {
             Post Manager
           </Link>
         </h1>
+        <div className='menu text-white'>
+          <ul className='flex'>
+            <li><Link href="/login">Login</Link></li>
+            <li>/</li>
+            <li><Link href="/register">Register</Link></li>
+          </ul>
+        </div>
       </div>
     </div>
   );
